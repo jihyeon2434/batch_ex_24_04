@@ -92,11 +92,7 @@ public class makeRebateOrderItemJobConfig {
             if (oldRebateOrderItem != null) {
                 rebateOrderItemRepository.delete(oldRebateOrderItem);
             }
-
-
             rebateOrderItemRepository.save(item);
         });
-
-
     }
 }
